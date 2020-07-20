@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: postgres
 
 development:
   <<: *default
@@ -82,4 +84,4 @@ production:
   <<: *default
   database: my_ecommerce01_production
   username: my_ecommerce01
-  password: <%= ENV['MY_ECOMMERCE01_DATABASE_PASSWORD'] %>
+  url: <%= ENV['postgres://srbayzmugndgjp:278dc9acc80b3981f64f0be53f0ed6c9b92c869c64194499b4965a44de4df54d@ec2-54-236-169-55.compute-1.amazonaws.com:5432/deo0h17kk3k05m'] %>

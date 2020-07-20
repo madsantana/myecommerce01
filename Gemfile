@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'solidus'
+gem 'solidus_auth_devise'
+gem 'cloudinary'
+gem 'carrierwave'
+gem 'solidus_cloudinary'
+gem 'deface'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
