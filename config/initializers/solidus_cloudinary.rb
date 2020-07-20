@@ -1,6 +1,6 @@
 Cloudinary.config do |config|
-  config.cloud_name = 'mads-apps'
-  config.api_key = '919158746439753'
-  config.api_secret = '9TlmPzAdN20osWYOBy96C9pkMwg'
+  config.cloud_name = 'your_cloudinary_cloud_name'
+  config.api_key = 'your_api_key'
+  config.api_secret = 'your_api_secret_key'
   config.cdn_subdomain = true
 end

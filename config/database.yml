@@ -84,4 +84,4 @@ production:
   <<: *default
   database: my_ecommerce01_production
   username: my_ecommerce01
-  url: <%= ENV['postgres://srbayzmugndgjp:278dc9acc80b3981f64f0be53f0ed6c9b92c869c64194499b4965a44de4df54d@ec2-54-236-169-55.compute-1.amazonaws.com:5432/deo0h17kk3k05m'] %>
+  url: <%= ENV['DATABASE_URL'] %>
